@@ -1,5 +1,5 @@
 # Step 1: Use an official PHP image with Apache optimized for Laravel
-FROM php:8.1-apache
+FROM php:8.2-apache
 
 # Step 2: Install core production system packages
 RUN apt-get update && apt-get install -y \
