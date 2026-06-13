@@ -37,3 +37,6 @@ RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cac
 
 # Expose standard web traffic port
 EXPOSE 80
+
+# Run migrations automatically BEFORE starting the Apache web server
+CMD php artisan migrate --force && apache2-foreground
