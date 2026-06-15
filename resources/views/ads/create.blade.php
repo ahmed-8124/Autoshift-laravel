@@ -35,7 +35,11 @@
           <div class="form-group">
             <label>Make *</label>
             <select name="make_id" required>
+              
               <option value="">Select Make</option>
+              <option value="1">SUzuki </option>
+              <option value="2">Toyota </option>
+              <option value="3">Honda </option>
               @foreach($makes as $mk)
               <option value="{{ $mk->id }}" {{ old('make_id')==$mk->id?'selected':'' }}>{{ $mk->name }}</option>
               @endforeach

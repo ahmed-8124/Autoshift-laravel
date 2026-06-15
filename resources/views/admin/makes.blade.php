@@ -11,7 +11,7 @@
       @csrf
       <div class="form-group">
         <label>Make Name *</label>
-        <input type="text" name="name" required placeholder="e.g. Toyota">
+        <input type="text" name="name"  placeholder="e.g. Toyota">
       </div>
       <div class="form-group">
         <label>Type *</label>
